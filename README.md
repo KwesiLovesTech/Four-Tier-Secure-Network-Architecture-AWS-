@@ -8,10 +8,10 @@ This project simulates a secure, production-grade AWS deployment using a **four-
 
 The environment follows a four-tier model with strict network isolation:
 
-- **Public Tier**: Nginx or Application Load Balancer (ALB) in public subnets  
-- **Web Tier**: EC2 instances or containers hosted in private web subnets  
-- **App Tier**: Backend services (e.g., microservices or APIs) in private app subnets  
-- **Data Tier**: Managed services like Amazon RDS and ElastiCache in isolated DB subnets  
+- **Public Tier**: Application Load Balancer (ALB) in public subnets  
+- **Web Tier**: EC2 instances in private web subnets  
+- **App Tier**: Backend services (e.g., microservices ) in private app subnets  
+- **Data Tier**: Amazon RDS and ElastiCache in isolated DB subnets  
 
 Each tier is designed to have strict network segmentation and layered security.
 
